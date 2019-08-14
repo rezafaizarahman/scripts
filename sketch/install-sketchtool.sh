@@ -9,7 +9,8 @@ mkdir temp
 cd temp
 curl -L -o sketch.zip http://www.sketchapp.com/download/sketch.zip
 unzip -q sketch.zip
-cp Sketch.app /Applications/
+cp -r Sketch.app /Applications/
 alias sketchtool="/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool"
+cd ../
 rm -Rf temp
 echo Installed `sketchtool --version`
