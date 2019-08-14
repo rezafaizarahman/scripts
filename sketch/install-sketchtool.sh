@@ -12,4 +12,4 @@ unzip -q sketch.zip
 cp Sketch.app /Applications/
 alias sketchtool="/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool"
 rm -Rf temp
-echo "sketchtool is now installed"
+echo Installed `sketchtool --version`
